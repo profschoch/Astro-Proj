@@ -1,4 +1,4 @@
-#Astronomy Project Files
+Astronomy Project Files<br>
 The project consists of 3 phases:<br>
 1.  create a simple interface to load and do a simple set of processing on a single image.<br>
 2.  upgrade the first project with a GUI interface and allow simple rectification and color stacking a la the SAO software.<br>
