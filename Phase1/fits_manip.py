@@ -5,12 +5,10 @@ Created on Tue OCT 15 19:56:07 2020
 
 @author: peterschoch
 """
-# fits_manip.py
+# aip4py.py
 # -------------------------------------------------------------------------
-# This program is designed to import a FITS image.  Slice off the image 
-#  portion as an array, and then
-#  perform some calculations on the array and output the altered
-#  image.
+# This program uses a GUI toimport a FITS image.  I am using this as the start of astro-image project
+# to create a program similar to the SAO image program and then move to the AIP4Win level.
 # ------------------------------------------------------------------------- 
 
 import matplotlib.pyplot as plt
