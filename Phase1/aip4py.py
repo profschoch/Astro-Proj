@@ -5,16 +5,20 @@ Created on Tue OCT 15 19:56:07 2020
 
 @author: peterschoch
 """
+
 # aip4py.py
 # -------------------------------------------------------------------------
 # This program uses a GUI toimport a FITS image.  I am using this as the start of astro-image project
 # to create a program similar to the SAO image program and then move to the AIP4Win level.
-# ------------------------------------------------------------------------- 
+=======
+
+------------------------------------------------------------- 
 
 import matplotlib.pyplot as plt
 
 from astropy.io import fits
 #  This gives us access to all of the astronomy  file opening utilities.
+
 
 from tkinter import Tk     # from tkinter import Tk for Python 3.x
 from tkinter.filedialog import askopenfilename
@@ -32,6 +36,9 @@ def get_file():
 
 name=get_file()
 astr_file=fits.open(name)
+=======
+
+
 # This imports the astronomy photo.
 
 print(astr_file.info())
