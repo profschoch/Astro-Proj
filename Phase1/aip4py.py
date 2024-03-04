@@ -5,13 +5,14 @@ Created on Tue OCT 15 19:56:07 2020
 
 @author: peterschoch
 """
-# fits_manip.py
+
+# aip4py.py
 # -------------------------------------------------------------------------
-# This program is designed to import a FITS image.  Slice off the image 
-#  portion as an array, and then
-#  perform some calculations on the array and output the altered
-#  image.
-# ------------------------------------------------------------------------- 
+# This program uses a GUI toimport a FITS image.  I am using this as the start of astro-image project
+# to create a program similar to the SAO image program and then move to the AIP4Win level.
+=======
+
+------------------------------------------------------------- 
 
 import matplotlib.pyplot as plt
 
@@ -19,7 +20,25 @@ from astropy.io import fits
 #  This gives us access to all of the astronomy  file opening utilities.
 
 
-astr_file=fits.open('Moon100327050242.FITS')
+from tkinter import Tk     # from tkinter import Tk for Python 3.x
+from tkinter.filedialog import askopenfilename
+
+def get_file():
+    """
+    The function is designed to open a simple GUI window to allow the user
+    to choose the data file to be used.  The function returns the file name 
+    along with its path.
+    """
+    print("Use the GUI window to choose the csv data file to process." )
+    Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
+    filename = askopenfilename() # show an "Open" dialog box and return the path to the selected file
+    return filename
+
+name=get_file()
+astr_file=fits.open(name)
+=======
+
+
 # This imports the astronomy photo.
 
 print(astr_file.info())
